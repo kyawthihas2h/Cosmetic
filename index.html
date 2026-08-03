@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lumina Beauty - Premium Cosmetics & Skincare</title>
+  
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Chart.js for Admin Analytics -->
@@ -19,16 +20,9 @@
         extend: {
           colors: {
             rosegold: {
-              50: '#fdf8f6',
-              100: '#f2e8e5',
-              200: '#e8d2cc',
-              300: '#d3b1a7',
-              400: '#be8c7e',
-              500: '#a66e60',
-              600: '#8c5346',
-              700: '#734136',
-              800: '#5f352c',
-              900: '#502e27',
+              50: '#fdf8f6', 100: '#f2e8e5', 200: '#e8d2cc', 300: '#d3b1a7',
+              400: '#be8c7e', 500: '#a66e60', 600: '#8c5346', 700: '#734136',
+              800: '#5f352c', 900: '#502e27',
             },
             champagne: '#f8f4ef',
             darknavy: '#0f172a'
@@ -91,13 +85,11 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
         
-        <!-- Brand Logo -->
+        <!-- Brand Logo (Unified Lumina Logo) -->
         <a href="#" onclick="showPage('intro')" class="flex items-center gap-3 group">
           <div class="w-10 h-10 text-rosegold-600 group-hover:scale-110 transition-transform duration-300">
             <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M50 5 L60 35 L90 40 L65 60 L75 90 L50 70 L25 90 L35 60 L10 40 L40 35 Z" fill="currentColor" opacity="0.8"/>
-              <circle cx="50" cy="50" r="15" fill="#fdf8f6" />
-              <path d="M45 45 Q50 40 55 45 Q60 55 50 60 Q40 55 45 45" fill="currentColor"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M50 10 C50 10 55 40 85 50 C55 60 50 90 50 90 C50 90 45 60 15 50 C45 40 50 10 50 10 Z M50 58 C54.4183 58 58 54.4183 58 50 C58 45.5817 54.4183 42 50 42 C45.5817 42 42 45.5817 42 50 C42 54.4183 45.5817 58 50 58 Z" fill="currentColor"/>
             </svg>
           </div>
           <span class="text-2xl font-bold tracking-wider font-serif-title text-slate-900 group-hover:text-rosegold-600 transition-colors">
@@ -499,7 +491,7 @@
         </div>
     </section>
 
-    <!-- 5. ADMIN PANEL (RESTORED ALL TABS) -->
+    <!-- 5. ADMIN PANEL -->
     <section id="page-admin" class="page-content hidden bg-slate-900 text-slate-100 min-h-[85vh] py-8 animate-fade-in">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -557,7 +549,7 @@
           </div>
         </div>
 
-        <!-- TAB: ITEM MANAGEMENT (UPLOAD WITH FILE/URL) -->
+        <!-- TAB: ITEM MANAGEMENT -->
         <div id="admin-view-items" class="adm-view hidden space-y-8 animate-fade-in">
           <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div class="bg-slate-800/50 p-6 rounded-[2rem] border border-slate-700 h-fit">
@@ -646,7 +638,7 @@
           </div>
         </div>
 
-        <!-- TAB: MOBILE BANKING (QR RESTORED) -->
+        <!-- TAB: MOBILE BANKING (QR) -->
         <div id="admin-view-banking" class="adm-view hidden space-y-6 animate-fade-in">
           <div class="bg-slate-800/50 p-6 rounded-[2rem] border border-slate-700 max-w-2xl">
             <h2 class="text-lg font-bold mb-2 flex items-center gap-2 text-white">
@@ -674,7 +666,7 @@
           </div>
         </div>
 
-        <!-- TAB: DELIVERY DATA (RESTORED) -->
+        <!-- TAB: DELIVERY DATA -->
         <div id="admin-view-delivery" class="adm-view hidden space-y-6 animate-fade-in">
           <div class="bg-slate-800/50 p-6 rounded-[2rem] border border-slate-700">
             <h2 class="text-lg font-bold mb-4 flex items-center gap-2 text-white">
@@ -697,7 +689,7 @@
           </div>
         </div>
 
-        <!-- TAB: TELEGRAM BOT (RESTORED) -->
+        <!-- TAB: TELEGRAM BOT -->
         <div id="admin-view-telegram" class="adm-view hidden space-y-6 animate-fade-in">
           <div class="bg-slate-800/50 p-6 rounded-[2rem] border border-slate-700 max-w-2xl">
             <h2 class="text-lg font-bold mb-2 flex items-center gap-2 text-sky-400">
@@ -730,8 +722,9 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
         <div class="space-y-4">
           <div class="flex items-center gap-2 text-white mb-6">
+             <!-- Matching unified Lumina Logo in Footer -->
              <svg class="w-8 h-8 text-rosegold-500" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M50 5 L60 35 L90 40 L65 60 L75 90 L50 70 L25 90 L35 60 L10 40 L40 35 Z" fill="currentColor"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M50 10 C50 10 55 40 85 50 C55 60 50 90 50 90 C50 90 45 60 15 50 C45 40 50 10 50 10 Z M50 58 C54.4183 58 58 54.4183 58 50 C58 45.5817 54.4183 42 50 42 C45.5817 42 42 45.5817 42 50 C42 54.4183 45.5817 58 50 58 Z" fill="currentColor"/>
             </svg>
             <span class="text-xl font-bold font-serif tracking-wide">LUMINA</span>
           </div>
@@ -795,7 +788,7 @@
     </div>
   </div>
 
-  <!-- CHECKOUT MODAL (WITH MYANMAR MAP & RESTORED QR) -->
+  <!-- CHECKOUT MODAL -->
   <div id="checkout-modal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-md flex items-center justify-center p-4 hidden animate-fade-in">
     <div class="bg-white rounded-[2rem] max-w-4xl w-full p-6 sm:p-10 shadow-2xl relative max-h-[95vh] overflow-y-auto custom-scrollbar flex flex-col lg:flex-row gap-8">
       <button onclick="closeCheckoutModal()" class="absolute top-6 right-6 text-slate-400 hover:text-slate-900 bg-slate-100 hover:bg-slate-200 rounded-full p-1 transition-colors z-10">
@@ -976,7 +969,7 @@
       container.appendChild(toast);
       lucide.createIcons();
       setTimeout(() => { toast.classList.remove('translate-y-2', 'opacity-0'); }, 50);
-      setTimeout(() => { toast.classList.add('opacity-0', 'translate-y-2'); setTimeout(() => toast.remove(), 300); }, 3500);
+      setTimeout(() => { toast.classList.add('opacity-0', 'translate-y-2'); setTimeout(() => toast.remove(), 3500); }, 3000);
     }
 
     // --- AUTHENTICATION PAGE LOGIC ---
@@ -1415,9 +1408,16 @@
         type: 'line',
         data: {
           labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-          datasets: [{ label: 'Revenue (Ks)', data: [120000, 190000, 150000, 220000, 310000, 280000, 390000], borderColor: '#be8c7e', backgroundColor: 'rgba(190, 140, 126, 0.1)', fill: true, tension: 0.4, pointBackgroundColor: '#8c5346' }]
+          datasets: [{ 
+              label: 'Revenue (Ks)', 
+              data: [120000, 190000, 150000, 220000, 310000, 280000, 350000], 
+              borderColor: '#a66e60', 
+              backgroundColor: 'rgba(166, 110, 96, 0.1)', 
+              fill: true, 
+              tension: 0.4 
+          }]
         },
-        options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { x: { grid: { display: false, color: '#334155' }, ticks: { color: '#94a3b8' } }, y: { grid: { color: '#334155', borderDash: [5, 5] }, ticks: { color: '#94a3b8' } } } }
+        options: { responsive: true, maintainAspectRatio: false }
       });
     }
 
@@ -1432,87 +1432,122 @@
         }
     }
 
+    function handleAddItem(e) {
+      e.preventDefault();
+      const title = document.getElementById('item-title').value;
+      const cat = document.getElementById('item-category').value;
+      const price = parseInt(document.getElementById('item-price').value);
+      const desc = document.getElementById('item-desc').value;
+      const imgType = document.getElementById('image-input-type').value;
+      
+      let finalImg = "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&q=80&w=600"; // default fallback
+      if (imgType === 'url') {
+          const urlVal = document.getElementById('item-image-url').value;
+          if (urlVal) finalImg = urlVal;
+      } else if (imgType === 'file' && currentUploadedImageBase64) {
+          finalImg = currentUploadedImageBase64;
+      }
+
+      const newItem = { id: Date.now(), title, category: cat, price, image: finalImg, description: desc };
+      products.unshift(newItem);
+      localStorage.setItem('lumina_products', JSON.stringify(products));
+      
+      document.getElementById('add-item-form').reset();
+      currentUploadedImageBase64 = "";
+      renderAdminItemsList();
+      showToast("Product published successfully!");
+      
+      // Update store views
+      renderShopProducts();
+      renderTrendingSlider();
+    }
+
     function renderAdminItemsList() {
       const container = document.getElementById('admin-items-list');
       container.innerHTML = products.map(p => `
-        <div class="p-4 bg-slate-900/80 rounded-2xl border border-slate-700 flex items-center justify-between gap-4 group">
-          <img src="${p.image}" alt="" class="w-14 h-14 object-cover rounded-xl border border-slate-700">
+        <div class="bg-slate-700/50 p-3 rounded-xl border border-slate-600 flex items-center gap-4">
+          <img src="${p.image}" class="w-16 h-16 rounded-lg object-cover">
           <div class="flex-grow">
-            <h4 class="font-bold text-sm text-white line-clamp-1">${p.title}</h4>
-            <span class="text-xs text-slate-400 uppercase tracking-wider">${p.category}</span>
+             <h4 class="text-sm font-bold text-white line-clamp-1">${p.title}</h4>
+             <p class="text-xs text-slate-400">${p.category} | ${p.price.toLocaleString()} Ks</p>
           </div>
-          <div class="flex flex-col items-end gap-1">
-            <span class="text-sm text-rosegold-400 font-bold">${p.price.toLocaleString()} Ks</span>
-            <button onclick="deleteProduct(${p.id})" class="text-slate-500 hover:text-rose-500 transition-colors text-xs font-semibold">Delete</button>
-          </div>
+          <button onclick="deleteProduct(${p.id})" class="p-2 bg-rose-500/20 text-rose-400 hover:bg-rose-500 hover:text-white rounded-lg transition-colors"><i data-lucide="trash-2" class="w-4 h-4"></i></button>
         </div>
       `).join('');
-    }
-
-    function handleAddItem(e) {
-      e.preventDefault();
-      const inputType = document.getElementById('image-input-type').value;
-      let finalImage = "";
-      
-      if(inputType === 'url') {
-          finalImage = document.getElementById('item-image-url').value;
-      } else {
-          finalImage = currentUploadedImageBase64;
-          if(!finalImage) {
-              showToast("Please select an image file first.", "error");
-              return;
-          }
-      }
-
-      const newProd = {
-        id: Date.now(),
-        title: document.getElementById('item-title').value,
-        category: document.getElementById('item-category').value,
-        price: parseInt(document.getElementById('item-price').value),
-        image: finalImage,
-        description: document.getElementById('item-desc').value
-      };
-
-      products.unshift(newProd); localStorage.setItem('lumina_products', JSON.stringify(products));
-      document.getElementById('add-item-form').reset(); currentUploadedImageBase64 = "";
-      renderShopProducts(); renderTrendingSlider(); renderAdminItemsList(); showToast("Product published successfully.");
+      lucide.createIcons();
     }
 
     function deleteProduct(id) {
-      products = products.filter(p => p.id !== id); localStorage.setItem('lumina_products', JSON.stringify(products));
-      renderShopProducts(); renderTrendingSlider(); renderAdminItemsList(); showToast("Product deleted.");
-    }
-    
-    // --- VIP LOGIC ---
-    function handleAddVIP(e) {
-        e.preventDefault();
-        const email = document.getElementById('vip-email').value; const discount = parseInt(document.getElementById('vip-discount').value);
-        vipList = vipList.filter(v => v.email !== email); vipList.push({email, discount});
-        localStorage.setItem('lumina_vips', JSON.stringify(vipList)); document.getElementById('add-vip-form').reset(); renderVIPList(); showToast("User added to VIP List!");
-    }
-    function renderVIPList() {
-        const container = document.getElementById('vip-list-container');
-        if(vipList.length === 0) { container.innerHTML = '<p class="text-sm text-slate-500">No VIPs added yet.</p>'; return; }
-        container.innerHTML = vipList.map(v => `<div class="flex items-center justify-between p-4 bg-slate-900 rounded-xl border border-slate-700"><div><p class="font-bold text-white text-sm">${v.email}</p><span class="text-xs font-bold text-amber-500 bg-amber-500/10 px-2 py-0.5 rounded uppercase tracking-wider">${v.discount}% Discount</span></div><button onclick="removeVIP('${v.email}')" class="text-slate-500 hover:text-rose-500 transition-colors"><i data-lucide="trash-2" class="w-4 h-4"></i></button></div>`).join(''); lucide.createIcons();
-    }
-    function removeVIP(email) {
-        vipList = vipList.filter(v => v.email !== email); localStorage.setItem('lumina_vips', JSON.stringify(vipList)); renderVIPList(); showToast("VIP status removed.");
+       products = products.filter(p => p.id !== id);
+       localStorage.setItem('lumina_products', JSON.stringify(products));
+       renderAdminItemsList();
+       renderShopProducts();
+       renderTrendingSlider();
+       showToast("Product removed.");
     }
 
-    // --- RESTORED BANKING & TELEGRAM SAVES ---
-    function handleSaveBanking(e) {
+    function handleAddVIP(e) {
       e.preventDefault();
-      bankingData = {
-        kpayName: document.getElementById('kpay-name').value, kpayNum: document.getElementById('kpay-number').value, kpayQr: document.getElementById('kpay-qr-url').value,
-        waveName: document.getElementById('wave-name').value, waveNum: document.getElementById('wave-number').value, waveQr: document.getElementById('wave-qr-url').value,
-      };
-      localStorage.setItem('lumina_banking', JSON.stringify(bankingData)); showToast("QR details saved!");
+      const email = document.getElementById('vip-email').value;
+      const discount = parseInt(document.getElementById('vip-discount').value);
+      if(!vipList.find(v => v.email === email)) {
+          vipList.push({ email, discount });
+          localStorage.setItem('lumina_vips', JSON.stringify(vipList));
+          renderVIPList();
+          document.getElementById('add-vip-form').reset();
+          showToast(`Added ${email} as VIP (${discount}% off)`);
+      } else {
+          showToast("User is already a VIP.", "error");
+      }
+    }
+
+    function renderVIPList() {
+       const container = document.getElementById('vip-list-container');
+       if(vipList.length === 0) {
+           container.innerHTML = `<p class="text-slate-500 text-sm">No VIPs added yet.</p>`;
+           return;
+       }
+       container.innerHTML = vipList.map(v => `
+           <div class="flex items-center justify-between p-3 bg-slate-700/50 border border-slate-600 rounded-xl">
+               <div>
+                   <p class="text-sm font-bold text-white">${v.email}</p>
+                   <p class="text-xs text-amber-400 font-semibold">${v.discount}% Discount</p>
+               </div>
+               <button onclick="removeVIP('${v.email}')" class="text-slate-400 hover:text-rose-400"><i data-lucide="x" class="w-4 h-4"></i></button>
+           </div>
+       `).join('');
+       lucide.createIcons();
+    }
+
+    function removeVIP(email) {
+        vipList = vipList.filter(v => v.email !== email);
+        localStorage.setItem('lumina_vips', JSON.stringify(vipList));
+        renderVIPList();
+        showToast("VIP removed.");
+    }
+
+    function handleSaveBanking(e) {
+        e.preventDefault();
+        bankingData = {
+            kpayName: document.getElementById('kpay-name').value,
+            kpayNum: document.getElementById('kpay-number').value,
+            kpayQr: document.getElementById('kpay-qr-url').value,
+            waveName: document.getElementById('wave-name').value,
+            waveNum: document.getElementById('wave-number').value,
+            waveQr: document.getElementById('wave-qr-url').value
+        };
+        localStorage.setItem('lumina_banking', JSON.stringify(bankingData));
+        showToast("Mobile banking details saved successfully.");
     }
 
     function handleSaveTelegram(e) {
-      e.preventDefault();
-      telegramData = { token: document.getElementById('tg-token').value, chatId: document.getElementById('tg-chatid').value };
-      localStorage.setItem('lumina_telegram', JSON.stringify(telegramData)); showToast("Telegram Settings saved!");
+        e.preventDefault();
+        telegramData = {
+            token: document.getElementById('tg-token').value,
+            chatId: document.getElementById('tg-chatid').value
+        };
+        localStorage.setItem('lumina_telegram', JSON.stringify(telegramData));
+        showToast("Telegram integration saved successfully.");
     }
   </script>
 </body>
